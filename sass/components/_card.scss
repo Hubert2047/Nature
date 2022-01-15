@@ -5,7 +5,6 @@
     height: 52rem;
     &__side {
         height: 100%;
-        color: #fff;
         transition: all .8s ease;
         position: absolute;
         top: 0;
@@ -23,6 +22,12 @@
             transform: rotateY(180deg);
             &-1 {
                 background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+            }
+            &-2 {
+                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+            }
+            &-3 {
+                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
             }
         }
     }
@@ -108,4 +113,28 @@
             }
         }
     }
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 80%;
+        text-align: center;
+
+    }
+    &__price-box {
+        text-align: center;
+        color: $color-white;
+    }
+
+    &__price-only {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+
+    &__price-value {
+        font-size: 6rem;
+        font-weight: 300;
+    }
+
  }   
