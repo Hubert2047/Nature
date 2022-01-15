@@ -1,0 +1,44 @@
+@keyframes fadeToRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-12rem);
+    }
+    70% {
+        transform: translateX(2rem);
+
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeToLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(12rem);
+    }
+    70% {
+        transform: translateX(-2rem);
+
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeToTop {
+    0% {
+        opacity: 0;
+        transform: translateY(12rem);
+    }
+    70% {
+        transform: translateY(-2rem);
+
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
