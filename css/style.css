@@ -595,18 +595,19 @@ body {
     position: fixed;
     top: 5.5rem;
     right: 5.5rem;
-    z-index: 100;
+    z-index: 1000;
     background-image: radial-gradient(#7ed56f, #28b485);
     transition: all .8s; }
   .navigation__nav {
     position: fixed;
-    height: 100vh;
-    width: 100vw;
     top: 0;
     left: -12rem;
     z-index: 1500;
     opacity: 0;
-    transition: all .8s; }
+    transition: all .8s;
+    height: 100vh;
+    width: 100vw;
+    visibility: hidden; }
   .navigation__list {
     position: absolute;
     top: 50%;
@@ -637,7 +638,8 @@ body {
     transform: scale(80); }
   .navigation__checkbox:checked ~ .navigation__nav {
     opacity: 1;
-    left: 0; }
+    left: 0;
+    visibility: visible; }
   .navigation__icon {
     position: absolute;
     top: 50%;
@@ -648,7 +650,7 @@ body {
       height: 2px;
       background-color: #999;
       display: inline-block;
-      transition: all .2s; }
+      transition: all 0.2s cubic-bezier(0.13, 0.71, 0.21, 1.06); }
     .navigation__icon::before, .navigation__icon::after {
       content: "";
       position: absolute;
