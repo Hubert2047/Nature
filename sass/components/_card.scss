@@ -34,10 +34,12 @@
 
     &:hover &__side--front {
         transform: rotateY(-180deg);
+        cursor: pointer;
     }
     
     &:hover &__side--back {
         transform: rotateY(0deg);
+        cursor: pointer;
     }
     //front side styling
     &__picture {

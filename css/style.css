@@ -212,9 +212,11 @@ body {
       .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
   .card:hover .card__side--front {
-    transform: rotateY(-180deg); }
+    transform: rotateY(-180deg);
+    cursor: pointer; }
   .card:hover .card__side--back {
-    transform: rotateY(0deg); }
+    transform: rotateY(0deg);
+    cursor: pointer; }
   .card__picture {
     background-size: cover;
     height: 23rem;
@@ -299,7 +301,8 @@ body {
       transform: scale(1.05);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.4);
       z-index: 20;
-      outline: 1.5rem solid #55c57a; }
+      outline: 1.5rem solid #55c57a;
+      cursor: pointer; }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.9); }
 
@@ -318,7 +321,8 @@ body {
     -webkit-background-clip: text;
     color: transparent; }
   .feature-box:hover {
-    transform: translateY(-1.5rem) scale(1.2); }
+    transform: translateY(-1.5rem) scale(1.2);
+    cursor: pointer; }
 
 .story {
   width: 75%;
@@ -588,6 +592,8 @@ body {
     z-index: 2000;
     background-color: #fff;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); }
+    .navigation__buttom:hover {
+      cursor: pointer; }
   .navigation__background {
     width: 5rem;
     height: 5rem;
