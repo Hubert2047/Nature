@@ -594,6 +594,10 @@ body {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); }
     .navigation__buttom:hover {
       cursor: pointer; }
+  .navigation__buttom:hover > .navigation__icon::before {
+    transform: translateY(-1.5px); }
+  .navigation__buttom:hover > .navigation__icon::after {
+    transform: translateY(1.5px); }
   .navigation__background {
     width: 5rem;
     height: 5rem;
@@ -654,7 +658,7 @@ body {
     .navigation__icon, .navigation__icon::before, .navigation__icon::after {
       width: 3rem;
       height: 2px;
-      background-color: #999;
+      background-color: #333;
       display: inline-block;
       transition: all 0.2s cubic-bezier(0.13, 0.71, 0.21, 1.06); }
     .navigation__icon::before, .navigation__icon::after {

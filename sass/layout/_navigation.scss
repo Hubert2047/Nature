@@ -17,7 +17,12 @@
         &:hover {
             cursor: pointer;
         }
-    
+    }
+    &__buttom:hover > &__icon::before {
+        transform: translateY(-1.5px);
+    }
+    &__buttom:hover > &__icon::after {
+        transform: translateY(1.5px);
     }
     
     &__background {
@@ -102,7 +107,7 @@
         &::after{
             width: 3rem;
             height: 2px;
-            background-color:$color-grey-dark-2 ;
+            background-color:$color-grey-dark-3 ;
             display:inline-block ;
             transition: all .2s cubic-bezier(.13,.71,.21,1.06);
         }
