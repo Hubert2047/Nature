@@ -13,12 +13,17 @@
         opacity: 1;
         visibility: visible;
     }
+    &:target &__content {
+        transform: translate(-50%,-50%) scale(1);
+    }
 
     &__content {
         width:75% ;
         background-color: $color-white;
         @include abscenter;
         display: table;
+        transform: translate(-50%,-50%) scale(.5);
+        transition: all .5s .1s;
     }
     &__left {
         width: 33.33333%;
