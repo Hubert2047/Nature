@@ -11,12 +11,16 @@
         position: fixed;
         top: 5rem;
         right: 5rem;
+        @include respond(tab-port) {
+            top: 2.5rem;
+            right: 2.5rem;
+        }
         z-index: 2000;
         background-color: $color-white;
         box-shadow: 0 1rem 2rem rgba($color-black,.1);
         &:hover {
             cursor: pointer;
-        }
+        }    
     }
     &__buttom:hover > &__icon::before {
         transform: translateY(-1.5px);
@@ -32,6 +36,10 @@
         position: fixed;
         top: 5.5rem;
         right: 5.5rem;
+        @include respond(tab-port) {
+            top: 2.5rem;
+            right: 2.5rem;
+        }
         z-index: 1000;
         background-image:radial-gradient($color-primary-light,$color-primary-dark) ;
         transition: all .8s;
